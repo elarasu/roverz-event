@@ -76,7 +76,11 @@ class EventAgenda extends Component {
 
   constructor(props) {
     super(props);
-    const events = eventTrans.getEvents();
+    let events = null;
+    if (props.ical) {
+      eventTrans.loadEvents(props.ical);
+    }
+    events = eventTrans.getEvents();
     this.state = {
       navigation: {
         index: 0,
@@ -294,6 +298,14 @@ class EventAgenda extends Component {
     />
   )
 }
+
+EventAgenda.defaultProps = {
+  ical: null,
+};
+
+EventAgenda.propTypes = {
+  ical: React.PropTypes.object,    // eslint-disable-line react/forbid-prop-types
+};
 
 /* Export Component ==================================================================== */
 export default EventAgenda;

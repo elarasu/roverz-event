@@ -144,11 +144,12 @@ export default class TimelineView extends Component {
     );
   }
 
-  renderDetail(rowData, sectionID, rowID) {
+  // renderDetail(rowData, sectionID, rowID) {
+  renderDetail(rowData) {
     const title = <Text style={[styles.title]}>{rowData.title}</Text>;
     let desc = null;
     let loca = null;
-    console.log(rowID);
+    // console.log(rowID);
     if (rowData.description && rowData.imageUrl) {
       desc = (
         <View style={styles.descriptionContainer}>

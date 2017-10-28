@@ -2,15 +2,15 @@
  * event component
  */
 import AgendaScreen from './src/AgendaScreen';
-import CalendarService from './src/CalendarService';
 import EventAgenda from './src/EventAgenda';
-import TimelineView from './src/TimelineView';
+import ICal from './src/ICalDataProcess';
+import EventData from './src/EventData';
 
 export {
     AgendaScreen,
-    CalendarService,
     EventAgenda,
-    TimelineView,
+    ICal,
+    EventData,
 };
 
 // -- EOF --
