@@ -35,7 +35,8 @@
     "react-native-calendars": "1.6.3",
     "react-native-calendar-events": "1.4.1",
     "react-native-tab-view": "0.0.69",
-    "react-native-elements": "0.17.0"
+    "react-native-elements": "0.17.0",
+    "react-native-timeline-listview": "0.2.2"
   },
   "peerDependencies": {},
   "devDependencies": {
